@@ -1,0 +1,37 @@
+.signup-box
+{
+	position: relative;
+	width: 380px;
+	height: 500px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.signup-box::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#D926A9,#D926A9);
+	animation: animate 6s linear infinite;
+}
+.signup-box::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#D926A9,#D926A9);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
