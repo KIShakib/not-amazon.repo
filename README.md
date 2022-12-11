@@ -1,4 +1,4 @@
-# Deals Of The Day
+# Emajon Shopping Store
 
 ## Live Site Link : https://emajon-shopping-app.web.app/
 
