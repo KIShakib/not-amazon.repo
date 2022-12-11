@@ -18,11 +18,11 @@ function App() {
       children: [
         {
           path: "/", element: <Shopping></Shopping>,
-          loader: () => fetch("http://localhost:5000/products")
+          loader: () => fetch("https://emajon-shopping-cart-app-server.vercel.app/products")
         },
         {
           path: "/home", element: <Shopping></Shopping>,
-          loader: () => fetch("http://localhost:5000/products")
+          loader: () => fetch("https://emajon-shopping-cart-app-server.vercel.app/products")
         },
         {
           path: "/orders", element: <Orders></Orders>,

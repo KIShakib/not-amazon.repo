@@ -16,7 +16,7 @@ const Shopping = () => {
     const page = Math.ceil(count / perPageProduct);
 
     useEffect(() => {
-        const url = `http://localhost:5000/products?currentPage=${currentPage}&perPageProduct=${perPageProduct}`;
+        const url = `https://emajon-shopping-cart-app-server.vercel.app/products?currentPage=${currentPage}&perPageProduct=${perPageProduct}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -34,7 +34,7 @@ const Shopping = () => {
             console.log(ids);
             const savedCart = [];
 
-            fetch("http://localhost:5000/productsByIds", {
+            fetch("https://emajon-shopping-cart-app-server.vercel.app/productsByIds", {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"
